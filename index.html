@@ -2,13 +2,30 @@
 <html>
 <body>
 
-<input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+    <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
+    
+    <input type="button" value="Reservation Complete" onClick="onReservationComplete()" />
 
-<script type="text/javascript">
-    function showAndroidToast(toast) {
-        Android.showToast(toast);
-    }
-</script>
+    <input type="button" value="Enquiry Complete" onClick="onEnquiryComplete()" />
+
+
+    <script type="text/javascript">
+         function showAndroidToast(toast) {
+                 Android.showToast(toast);
+            }
+    </script>
+    
+    <script type="text/javascript">
+         function onReservationComplete() {
+                 Android.onReservationComplete();
+            }
+    </script>
+    
+    <script type="text/javascript">
+         function onEnquiryComplete() {
+                 Android.onEnquiryComplete();
+            }
+    </script>
 
 </body>
 </html>
