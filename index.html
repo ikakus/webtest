@@ -4,7 +4,7 @@
 
     <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
     
-    <input type="button" value="Reservation Complete" onClick="onReservationComplete()" />
+    <input type="button" value="Reservation Complete" onClick="onReservationComplete(12)" />
 
     <input type="button" value="Enquiry Complete" onClick="onEnquiryComplete()" />
 
@@ -16,8 +16,8 @@
     </script>
     
     <script type="text/javascript">
-         function onReservationComplete() {
-                 Android.onReservationComplete();
+         function onReservationComplete(id) {
+                 Android.onReservationComplete(id);
             }
     </script>
     
